@@ -40,7 +40,7 @@ jobs:
           arch: ${{ matrix.arch }}
 
       - name: Initialize CodeQL for C++
-        uses: github/codeql-action/init@db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28 # v4.37.8
+        uses: github/codeql-action/init@1fc58d04a4d4374f921bdac573c3811c240f9c26 # v4.39.2
         if: ${{ matrix.os == 'windows-2019' && matrix.conf == 'Debug' }}
         with:
           languages: cpp
